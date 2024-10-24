@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="mt-5">Dashboard</h1>
+      <h2 class="logged">{{ user if user else "Użytkownik niezalogowany" }}</h2>
+      <h2 class="balancepln">{{ balancepln }} PLN</h2>
+      <h2 class="balancetokens">{{ balancetokens }} tokens</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
